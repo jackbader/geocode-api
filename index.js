@@ -2,9 +2,11 @@ require('dotenv').config();
 
 const express = require('express');
 const NodeGeocoder = require('node-geocoder');
+const cors = require('cors');
 
 const app = express();
 app.use(express.json());
+app.use(cors()); // This will enable CORS for all routes
 
 app.get('/', (req, res) => {
   res.send('Hello from geocode server!');
