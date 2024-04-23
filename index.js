@@ -17,7 +17,7 @@ const options = {
   
 const geocoder = NodeGeocoder(options);
   
-// Function to simulate sleep
+// Function to simulate sleep.
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
